@@ -1,0 +1,157 @@
+
+/* Custom CSS for dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.fa-user:hover,
+.fa-heart:hover {
+  color:#ff4c3b;
+}
+
+a:hover {
+  color: #ff4c3b;
+  text-decoration: none;
+}
+.dropdown-menu .dropdown-item:hover,
+.navbar-nav a:hover {
+  color: #ff4c3b !important; /* Apply red color on hover */
+  padding: 5px 60px 5px 20px;
+}
+.logo{
+    gap: 30px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* banner */
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-fluid {
+  transition: transform 0.5s ease;
+}
+
+.img-fluid.zoom:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+  opacity: 0.9;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  bottom: 10px;
+  text-align: center;
+  color: white;
+}
+/* slider transition apply */
+.card-hover:hover{
+    opacity: 0.5;
+
+  transform: scale(0.8);
+}
+.fixed-bg {
+    background-image: url('/assets/img/parallax/1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    height: 75vh;
+    width: 100%;
+    top: 0;
+    left: 0; 
+  }
+  
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hover:hover{
+    color: red;
+
+  }
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.instagram-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(216, 64, 64, 0.945);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.instagram-item:hover .instagram-content {
+    opacity: 0.6;
+    pointer-events: auto;
+}
+
+.instagram-item:focus .instagram-item,
+.instagram-item:active .instagram-item {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.instagram-item:focus {
+    outline: none;
+}
+
+.hover-logo{
+    opacity: 0.7;
+}
+.hover-logo:hover{
+    opacity: 1;
+}
+.btn-custom {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #ff4c3b;
+  color: white;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #ff4c3b;
+}
+
+.btn-custom2 {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #f0b54d;
+  color: white;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-custom2:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #f0b54d;
+}

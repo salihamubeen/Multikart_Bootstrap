@@ -1,0 +1,108 @@
+.fa-user:hover, .fa-heart:hover{
+    color:red;
+}
+a:hover{
+    color: red;
+}
+/* banner */
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-fluid {
+  transition: transform 0.5s ease;
+}
+
+.img-fluid.zoom:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+  opacity: 0.9;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  bottom: 10px;
+  text-align: center;
+  color: white;
+}
+/* slider transition apply */
+.card-hover:hover{
+    opacity: 0.5;
+
+  transform: scale(0.8);
+}
+.fixed-bg {
+    background-image: url('/assets/img/parallax/1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    height: 75vh;
+    width: 100%;
+    top: 0;
+    left: 0; /* Ensure it's behind the content */
+  }
+  
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hover:hover{
+    color: red;
+
+  }
+  /* icon hover / focus */
+  .zoomable {
+    transition: transform 0.1s ease-in-out;
+  }
+  .zoomable:hover {
+    transform: scale(1.2); /* Adjust the scale as needed */
+    outline: none;
+  }
+  /*  */
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.instagram-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(216, 64, 64, 0.945);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.instagram-item:hover .instagram-content {
+    opacity: 0.6;
+    pointer-events: auto;
+}
+
+.instagram-item:focus .instagram-item,
+.instagram-item:active .instagram-item {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.instagram-item:focus {
+    outline: none;
+}
+
+.hover-logo{
+    opacity: 0.7;
+}
+.hover-logo:hover{
+    opacity: 1;
+}
+
